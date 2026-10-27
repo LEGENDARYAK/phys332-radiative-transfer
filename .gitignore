@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local virtual environments / editors
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+
+# Generated science artifacts: never commit bulk arrays/figures by accident
+outputs/
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Keep experiment documentation, not local notebook checkpoints
+.ipynb_checkpoints/

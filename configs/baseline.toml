@@ -1,0 +1,25 @@
+# Dimensionless pedagogical benchmark: a purely absorbing uniform sphere.
+# At the center, J/I0 = exp(-kappa_abs * mean_density * radius) = exp(-1).
+[cloud]
+kind = "uniform"
+resolution = 32
+radius = 1.0
+mean_density = 1.0
+
+[optics]
+kappa_abs = 1.0
+kappa_scat = 0.0
+g = 0.0
+
+[background]
+intensity = 1.0
+
+[observer]
+position = [0.0, 0.0, 0.0]
+
+[simulation]
+solver = "uncollided"
+mu_bins = 16
+phi_bins = 32
+packets_per_direction = 1
+seed = 2026

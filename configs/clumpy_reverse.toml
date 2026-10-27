@@ -1,0 +1,30 @@
+# Toy clumps + isotropic radiation + elastic scattering (NOT gamma rays).
+# Small default dimensions are chosen for a quick smoke test.
+[cloud]
+kind = "gaussian_clumps"
+resolution = 32
+radius = 1.0
+mean_density = 1.0
+clump_strength = 0.95
+n_clumps = 12
+clump_width = 0.19
+seed = 17
+
+[optics]
+kappa_abs = 0.7
+kappa_scat = 0.6
+g = 0.6
+
+[background]
+intensity = 1.0
+
+[observer]
+position = [0.0, 0.0, 0.0]
+
+[simulation]
+solver = "reverse"
+mu_bins = 10
+phi_bins = 20
+packets_per_direction = 16
+seed = 2026
+max_events = 10000
